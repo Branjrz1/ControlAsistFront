@@ -1,5 +1,7 @@
 
 import PropTypes from 'prop-types';
+import imageLogoWithe from '../assets/LogoConvenWhite.png'
+import imageLogo from '../assets/LogoConven.webp'
 
 Header.propTypes = {
     filterData: PropTypes.string.isRequired,
@@ -16,7 +18,7 @@ export default function Header({ filterData, handleFilterChange, toggleDarkMode,
                 <nav className="bg-white border-gray-200 dark:bg-gray-900">
                     <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                         <a href="" className="flex items-center space-x-3 rtl:space-x-reverse">
-                            {darkMode ?<img src="../../public/LogoConvenWhite.png" className="size-12" alt="Convención Logo" /> :<img src="../../public/LogoConvenWhite.png" className="size-12" alt="Convención Logo" />}
+                            {darkMode ?<img src={imageLogoWithe} className="size-12" alt="Convención Logo" /> :<img src={imageLogo} className="size-12" alt="Convención Logo" />}
                             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Convención 2024</span>
                         </a>
                         <div className="flex md:order-2">
